@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+@import url("reset.css");
+* {
+  font-family: "Roboto", "Noto Sans TC", "微軟正黑體";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 24px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 32px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+h4 span {
+  color: #A00404;
+  margin-left: 16px;
+}
+
+h5 {
+  font-size: 32px;
+  border-bottom: 1px solid #FFF;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+h5 span {
+  margin-left: 16px;
+}
+
+/*head*/
+.head {
+  color: #000;
+}
+
+.head .container {
+  width: 1200px;
+}
+
+.head .container h1 {
+  font-size: 80px;
+  font-weight: normal;
+  margin: 47px 0 45px 0;
+  border-bottom: 2px solid #000;
+  padding-bottom: 20px;
+}
+
+.head .container h4 {
+  margin-top: 48px;
+}
+
+.head .container ul {
+  margin-bottom: 24px;
+}
+
+.head .container .last {
+  margin-bottom: 72px;
+}
+
+/*specialty*/
+.specialty {
+  background-color: #415165;
+  color: #FFF;
+}
+
+.specialty .container {
+  padding: 24px 0;
+  width: 996px;
+}
+
+.specialty .container h5 {
+  margin-bottom: 40px;
+}
+
+.specialty .container ul {
+  width: 217px;
+  margin: 0 auto;
+  border-left: 1px solid #FFF;
+  padding-left: 24px;
+}
+
+.specialty .container ul li {
+  margin-bottom: 20px;
+}
+
+/*experience*/
+.experience .container {
+  width: 1200px;
+  padding: 72px 0;
+}
+
+.experience .container p {
+  font-size: 20px;
+}
+
+.experience .container ul {
+  margin-top: 24px;
+  line-height: 2;
+  margin-bottom: 8px;
+}
+
+/*footer*/
+.footer {
+  background-color: #415165;
+  color: #FFF;
+}
+
+.footer .container {
+  padding: 24px 0 36px 0;
+  width: 996px;
+}
+
+.footer .container h5 {
+  margin-bottom: 32px;
+}
+
+.footer .container p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer .container p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .container ul li {
+  margin: 16px 0 0 24px;
+}
+/*# sourceMappingURL=all.css.map */
