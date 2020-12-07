@@ -1,0 +1,24 @@
+@mixin bg-center($size, $url) {
+    background-size: $size;
+    background-position: center;
+    background-image: url($url);
+    background-repeat: no-repeat;
+}
+@mixin xy-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 768~992 */
+@mixin pad{
+    @media(max-width:1024px) {
+        @content;
+    }
+}
+/* 767以下 */
+@mixin phone{
+    @media(max-width:767px) {
+        @content;
+    }
+}

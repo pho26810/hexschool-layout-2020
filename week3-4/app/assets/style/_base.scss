@@ -1,0 +1,108 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+    font-size: $fz-base;
+    line-height: 1.5;
+}
+section{
+    padding: 4rem 0 5rem;
+    @include pad{
+        padding: 40px 0;
+    }
+    @include phone{
+        padding: 32px 0;
+    }
+}
+p{
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+h1{
+    font-size: $fz-h1;
+    @include pad{
+        font-size: $fz-base * 3;
+    }
+    @include phone{
+        font-size: $fz-base * 2;
+    }
+}
+h2{
+    font-size: $fz-h2;
+    @include pad{
+        font-size: $fz-base * 2;
+    }
+    @include phone{
+        font-size: $fz-h4;
+    }
+}
+h3{
+    font-size: $fz-h3;
+}
+.text-center {
+    text-align: center;
+}
+.text-red {
+    color: $red !important;
+}
+.text-white {
+    color: $white !important;
+}
+.fw-normal{
+    font-weight: 400;
+}
+.fw-bold{
+    font-weight: 500;
+}
+.fw-bolder{
+    font-weight: 700;
+}
+.d-flex {
+    display: flex;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+    @include pad{
+        padding: 0 40px;
+    }
+    @include phone{
+        padding: 0 16px;
+    }
+}
+.m-0{
+    margin: 0;
+}
+.p-0{
+    padding: 0;
+}
+.card__wrap{
+    flex-wrap: wrap;
+}
+.card{
+    width: calc((100% / 4) - 20px);
+    @include pad{
+        width: calc((100% - 30px) / 2);
+    }
+    @include phone{
+        width: 100%;
+    }
+}

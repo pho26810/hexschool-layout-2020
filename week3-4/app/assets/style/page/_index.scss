@@ -1,0 +1,284 @@
+#index h2 {
+    margin-top: 0;
+    margin-bottom: 60px;
+    color: $dark-red;
+    @include pad{
+        margin-bottom: 32px;
+    }
+}
+
+.mainBanner {
+    @include bg-center(cover, "../images/banner.png");
+    padding: 0;
+    .container{
+        height: calc(100vh - 109px);
+        align-items: center;
+        justify-content: flex-end;
+    }
+    @include pad{
+        .container{
+            height: 840px;
+        }
+        background-image: url("../images/banner-sm.png");
+    }
+    @include phone{
+        .container{
+            height: 394px;
+        }
+    }
+}
+
+.mainTitle {
+    text-align: right;
+    color: $dark-red;
+    h1{
+        margin: 0;
+        line-height: 1.4;
+    }
+    p{
+        font-size: 2.25rem;
+        font-weight: 600;
+        @include pad{
+            font-size: $fz-large;
+        }
+        @include phone{
+        font-size: $fz-base;
+        }
+    }
+}
+
+.feature{
+    background-color: $light-red;
+    .card{
+    padding: 0 23px;
+    text-align: justify;
+    img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 40px;
+    }
+    @include pad{
+        margin-bottom: 40px;
+        img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+    }
+    }
+    .card__title{
+    font-size: $fz-h4;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: $dark-red;
+    }
+}
+
+.productClassic{
+    &__content{
+        margin-bottom: 32px;
+        align-items: center;
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+            .productClassic__photo{
+                margin-left:30px;
+            }
+            @include pad{
+                flex-direction: row;
+                .productClassic__photo{
+                    margin-left: 0;
+                    margin-right: 30px;
+                }
+            }
+            @include phone{
+                .productClassic__photo{
+                    margin-right: 0;
+                }
+            }
+        }
+        &:nth-child(even){
+            .productClassic__photo{
+                margin-right: 30px;
+            }
+            @include phone{
+                .productClassic__photo{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__photo{    
+        width: 58%;
+    }
+    &__series{
+        font-size: $fz-h2;
+        color: $red;
+        font-style: italic;
+        text-transform:uppercase;
+        align-items: center;
+        span{
+            margin-right: 8px;
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+        }
+        .diamond{
+            @include bg-center(contain, "../images/icon-diamond.svg");
+        }
+        .sun{
+            @include bg-center(contain, "../images/icon-sun.svg");
+        }
+        .thunder{
+            @include bg-center(contain, "../images/icon-thunder.svg");
+        }
+    }
+    @include pad{
+        &__content{
+            margin-bottom: 8px;
+        }
+        &__series{
+            font-size: $fz-base * 1.75;
+            img{
+                width: 32px;
+            }
+        }
+    }
+    @include phone{
+        &__photo{    
+            width: 100%;
+        }
+        &__series{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            color: white;
+            span{
+                width: 32px;
+                height: 32px;
+            }
+            .diamond{
+                @include bg-center(contain, "../images/icon-diamond-white.svg");
+            }
+            .sun{
+                @include bg-center(contain, "../images/icon-sun-white.svg");
+            }
+            .thunder{
+                @include bg-center(contain, "../images/icon-thunder-white.svg");
+            }
+        }
+    }
+}
+
+.coBranding{
+    @include bg-center(cover,"../images/bg.png");
+    &__content{
+        flex-wrap: wrap;
+    }
+    &__series{
+        position: relative;
+        width: calc((100% - 30px) / 2);
+        background-color: $white;
+        a{
+            @include xy-center;
+        }
+        img{
+            opacity: 0.5;
+        }
+        div{
+            position: absolute;
+            color: $red;
+            font-size: 4.5rem;
+        }
+        @include pad{
+            div{
+                font-size: $fz-h3;
+            }
+        }
+        @include phone{
+            width: 100%;
+            &:nth-child(1){
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.recommend{
+    .card{
+    border: 1px solid rgba(222, 226, 230, 1);
+    color: #222;
+    @include pad{
+        margin-bottom: 30px;
+    }
+    @include phone{
+        margin-bottom: 16px;
+    }
+    }
+    &__title{
+    margin-bottom: 7px;
+    font-size: $fz-small;
+    }
+    &__content{
+    padding: 16px;
+    .time{
+        margin-top: 10px;
+        font-size: $fz-small;
+        color: #707070;
+    }
+    }
+}
+
+.contactUs{
+    background-color: $light-red;
+    .container{
+    max-width: 730px;
+    h2{
+        margin-bottom: 24px;
+        color: $black;
+    }
+    p{
+        margin-bottom: 20px;
+        font-size: $fz-large;
+    }
+    @include pad{
+        max-width: 530px;
+        font-size: $fz-small;
+        p{
+            font-size: $fz-base;
+        }
+    }
+    }
+    label{
+    display: block;
+    margin-bottom: 3px;
+    }
+    .input-style{
+    padding: 16px 12px;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #000;
+    outline: none;
+    @include pad{
+        padding: 9px 12px;
+    }
+    }
+    .submit{
+    display: block;
+    margin: 42px auto 0;
+    padding: 18px 0;
+    width: 350px;
+    background-color: $red;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        background-color: $dark-red;
+    }
+    @include pad{
+        margin-top: 20px;
+        padding: 8px 0;
+        width: 210px;
+    }
+    }
+}
