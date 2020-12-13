@@ -2,23 +2,26 @@
     nav{
         max-width: 1360px;
         margin: 0 auto;
-        @include phone{
-            width: 100vw;
+        li{
+            width: calc(100% / 3);
+            &:last-child{
+                .productClassic__series{
+                    border-right: 1px solid #DCDCDC;
+                }
+            }
         }
     }
     .productClassic__series{
         position: relative;
         left: 0;
-        transform: translate(0);
-        margin-right: -1px;
-        width: calc(101% / 3);
-        height: 100px;
+        width: 100%;
+        padding: 19px 0px;
         color: $black;
         font-style: normal;
         font-size: 42px;
         justify-content: center;
         border-left: 1px solid #DCDCDC;
-        border-right: 1px solid #DCDCDC;
+        transform: translate(0);
         &:after{
             content:" ";
             position: absolute;
@@ -72,7 +75,7 @@
     }
 }
 .product__banner{
-    div{
+    li{
         width: calc((100% - 30px) / 2);
         height: 309px;
         &:nth-child(1){
