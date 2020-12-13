@@ -2,8 +2,9 @@
 @import "normalize";
 @import "mixin";
 
-@import "layout";
 @import "base";
+@import "utils";
+@import "layout";
 
 @import "page/index";
 @import "page/product-op";

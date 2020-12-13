@@ -1,0 +1,36 @@
+.text-center {
+    text-align: center;
+}
+.text-red {
+    color: $red !important;
+}
+.text-white {
+    color: $white !important;
+}
+.fw-normal{
+    font-weight: 400;
+}
+.fw-bold{
+    font-weight: 500;
+}
+.fw-bolder{
+    font-weight: 700;
+}
+.d-flex {
+    display: flex;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.m-0{
+    margin: 0;
+}
+.p-0{
+    padding: 0;
+}
+.card__wrap{
+    flex-wrap: wrap;
+}
