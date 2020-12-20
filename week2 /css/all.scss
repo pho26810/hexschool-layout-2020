@@ -1,3 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-@import url("reset.css");
+@import "mixin"; // 放置所有Sass全域變數與Mixin 
+@import "reset"; // reset.css
+@import "extnd"; // 拿來合併樣式，都放@extend用的檔案
+@import "layout"; // 共同框架
+@import "index"; // 首頁
