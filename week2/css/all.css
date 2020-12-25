@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
@@ -38,4 +39,107 @@ q:before, q:after {
 abbr, acronym {
   border: 0;
 }
+
+body {
+  font-family: "Roboto", "Noto Sans TC", "微軟正黑體";
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 500;
+}
+
+/*header*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.header .container {
+  margin: 356px 0 268px 0;
+}
+
+.header .container .header__title {
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.header .container .header__title span {
+  display: block;
+  text-align: left;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.header .container p {
+  font-weight: 900;
+  line-height: 36px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*footer*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer .container {
+  margin: 64px 0 80px 0;
+}
+
+.footer .container ul {
+  margin-top: 16px;
+}
+
+.footer .container ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.container.primary {
+  margin-top: 64px;
+}
+
+/*about*/
+/*otherworks*/
 /*# sourceMappingURL=all.css.map */

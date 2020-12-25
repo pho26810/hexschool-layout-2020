@@ -1,2 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+body {
+    font-family: "Roboto", "Noto Sans TC", "微軟正黑體";
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 500;
+}
+
+
+/*header*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    .container {
+        margin: 356px 0 268px 0;
+        .header__title {
+            font-size: 80px;
+            line-height: 94px;
+            font-weight: 900;
+            margin-bottom: 32px;
+            span {
+                display: block;
+                text-align: left;
+                font-size: 24px;
+                line-height: 42px;
+                font-weight: 700;
+            }
+        }
+        p {
+            font-weight: 900;
+            line-height: 36px;
+            text-align: left;
+            margin-bottom: 48px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    .container {
+        margin: 64px 0 80px 0;
+        ul {
+            margin-top: 16px;
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 500;
+            }
+        }
+    }
+}
