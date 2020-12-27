@@ -17,6 +17,10 @@ h2 {
     font-weight: 500;
 }
 
+$primary: #891818;
+$secondary: #707070;
+$dark: #000;
+$white: #fff;
 
 /*header*/
 
@@ -26,32 +30,32 @@ h2 {
     align-items: center;
     background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center center no-repeat;
     background-size: cover;
-    color: #fff;
+    color: $white;
     .container {
-        margin: 356px 0 268px 0;
-        .header__title {
-            font-size: 80px;
-            line-height: 94px;
-            font-weight: 900;
-            margin-bottom: 32px;
-            span {
-                display: block;
-                text-align: left;
-                font-size: 24px;
-                line-height: 42px;
-                font-weight: 700;
-            }
-        }
-        p {
-            font-weight: 900;
-            line-height: 36px;
+        padding: 356px 0 268px 0;
+    }
+    &__title {
+        font-size: 80px;
+        line-height: 94px;
+        font-weight: 900;
+        margin-bottom: 32px;
+        span {
+            display: block;
             text-align: left;
-            margin-bottom: 48px;
+            font-size: 24px;
+            line-height: 42px;
+            font-weight: 700;
         }
-        ul {
-            display: flex;
-            justify-content: space-between;
-        }
+    }
+    p {
+        font-weight: 900;
+        line-height: 36px;
+        text-align: left;
+        margin-bottom: 48px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -61,19 +65,19 @@ h2 {
 .footer {
     display: flex;
     justify-content: center;
-    background-color: #000;
+    background-color: $dark;
     color: #fff;
     .container {
-        margin: 64px 0 80px 0;
-        ul {
-            margin-top: 16px;
-            a {
-                color: #fff;
-                text-decoration: none;
-                font-size: 24px;
-                line-height: 36px;
-                font-weight: 500;
-            }
+        padding: 64px 0 80px 0;
+    }
+    ul {
+        margin-top: 16px;
+        a {
+            color: $white;
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 500;
         }
     }
 }
