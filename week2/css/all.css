@@ -215,7 +215,7 @@ li {
   margin-bottom: 40px;
 }
 
-.brand__list:nth-child(2) {
+.brand__list li:nth-child(2) {
   margin-right: 24px;
 }
 
