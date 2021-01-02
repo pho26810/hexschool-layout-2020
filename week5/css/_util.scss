@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+$primary: #2A8356;
+$white: #fff;
+$dark: #121212;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.txt-primary {
+    color: black;
+}
+
+.bg-primary {
+    background: #EDF4EE !important;
+}
