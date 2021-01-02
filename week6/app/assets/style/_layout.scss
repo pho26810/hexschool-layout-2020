@@ -1,0 +1,42 @@
+.header, .footer{
+    .logo {
+        margin: 1px 0;
+        width: 128px;
+        height: 38px;
+        overflow: hidden;
+        text-indent: 101%;
+    }
+}
+.header {
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    .logo {
+        @include bg-center(contain, "../images/d’Perfume@2x.png");
+    }
+    .nav-item .nav-link{
+        color: $secondary;
+    }
+    .navbar-toggler {
+        outline: none;
+    }
+    @include media-breakpoint-down(md) { 
+        .nav-item .nav-link{
+            padding: 1rem .5rem;
+            border-bottom: 1px solid $white;
+            background-color: #707070;
+            color: $white;            
+        }
+        .cartNum{
+            padding: 2px 6px;
+            right: 2px;
+            top: 0;
+        }
+    }
+}
+.footer {
+    .logo {
+        @include bg-center(contain, "../images/d’Perfumewhite@2x.png");
+    }
+    small{
+        font-size: 14px;
+    }
+}

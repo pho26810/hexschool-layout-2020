@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title><%- title %></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="./assets/style/all.css">	
+</head>
+
+<body>
+	<header class="header sticky-top bg-white">
+		<nav class="navbar navbar-expand-lg navbar-light p-0">
+			<div class="container-fluild container-lg">
+				<h1 class="mb-0 ml-1 ml-lg-0 p-2 px-lg-1"><a href="index.html" class="d-block logo">D’PERFUME</a></h1>
+				
+				<a class="nav-link d-flex d-lg-none text-secondary ml-auto position-relative" href="#">
+					<i class="material-icons">shopping_cart</i>
+					<span class="badge badge-pill badge-primary font-weight-normal position-absolute cartNum">3</span>
+				</a>
+				<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav h5 font-weight-normal ml-auto">
+						<li class="nav-item ml-lg-3">
+							<a class="nav-link d-flex align-items-center justify-content-center" href="products.html"><i class="material-icons d-none d-lg-inline-block mr-1">store</i> Product <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item ml-lg-3">
+							<a class="nav-link d-flex align-items-center justify-content-center" href="account.html"><i class="material-icons d-none d-lg-inline-block mr-1">person</i> Mypage</a>
+						</li>
+						<li class="nav-item ml-lg-3">
+							<a class="nav-link d-flex align-items-center justify-content-center border-0" href="#"><i class="material-icons d-none d-lg-inline-block mr-1">favorite</i> Wishlist</a>
+						</li>
+						<li class="nav-item d-none d-lg-block ml-lg-3">
+							<a class="nav-link d-flex align-items-center justify-content-center" href="#"><i class="material-icons mr-1">shopping_cart</i> Cart(<span class="cartNum">3</span>)</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<%- contents %>
+
+	<footer class="footer bg-primary py-3">
+		<div class="container d-flex align-items-center my-1">
+			<a href="index.html" class="d-block logo mr-3">D’PERFUME</a>
+			<p class="mb-0 text-white"><small>© 2020. All Rights Reserved.</small></p>
+			<ul class="nav ml-auto h5 font-weight-normal d-none d-md-flex"> 
+				<li class="nav-item ml-4"><a href="products.html" class="text-decoration-none text-white">Product</a></li>
+				<li class="nav-item ml-4"><a href="#" class="text-decoration-none text-white">Blog</a></li>
+				<li class="nav-item ml-4"><a href="#" class="text-decoration-none text-white">Contact</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- add favorite -->
+	<div class="modal fade" id="addFavorite" tabindex="-1" role="dialog" aria-labelledby="addFavorite"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content border-0">
+			<div class="modal-body text-primary text-center h5 mb-0">已加入我的收藏</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- add cart -->
+	<div class="modal fade" id="add-cart" tabindex="-1" role="dialog" aria-labelledby="add-cart"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content border-0">
+			<div class="modal-body text-primary text-center h5 mb-0">已加入購物車</div>
+		</div>
+	</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.js" crossorigin="anonymous"></script>
+	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+</body>
+
+</html>
