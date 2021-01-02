@@ -1,0 +1,91 @@
+.banner{
+    height: calc(100vh - 56px);
+    max-height: 870px;
+    @include bg-center(cover, "../images/index1.jpg");
+    @include xy-center;
+    .btn{
+        line-height: 56px;
+        font-size: $h3-font-size;
+        border-width: 2px;
+        &:hover{
+            background-color: rgba(255,255,255,.3);
+            border-color: rgba(255,255,255,.3);
+            color: $white;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        max-height: 480px;
+        .h1{
+            font-size: 2rem;
+        }
+        .h4{
+            font-size: 1.25rem;
+        }
+    }
+}
+.productBrand{
+    li:nth-child(1) .img-square{
+        @include bg-center(cover, "../images/index2.jpg");
+    }
+    li:nth-child(2) .img-square{
+        @include bg-center(cover, "../images/index3.png");
+    }
+    li:nth-child(3) .img-square{
+        @include bg-center(cover, "../images/index4.jpg");
+    }
+    li:nth-child(4){
+        .img-rectangle{
+            @include bg-center(cover, "../images/index5.jpg");
+        }
+        .btn{
+            line-height: 56px;
+            border-width: 2px;            
+        }
+    }
+}
+.productBest{
+    a{
+        &:hover{
+            .productBest__photo{
+                @include hover-shadow;            
+            }
+        }
+    }
+    &__photo{
+        padding-bottom: 154%;
+        transition: .3s;
+    }
+    li:nth-child(1) .productBest__photo{
+        @include bg-center(cover, "../images/index6.jpg");
+    }
+    li:nth-child(2) .productBest__photo{
+        @include bg-center(cover, "../images/index7.jpg");
+    }
+    li:nth-child(3) .productBest__photo{
+        @include bg-center(cover, "../images/index8.jpg");
+    }
+    .soldOut{
+        &:after{
+            content: "Sold out";
+            display: flex !important;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0,0,0,.3);
+            color: $white;
+            font-size: $h4-font-size;
+            @include xy-center;
+        }
+    }
+}
+.subscribe{
+    height: 600px;
+    padding-bottom: 120px;
+    @include bg-center(cover, "../images/index10.jpg");
+    input, button{
+        height: 56px;
+        border:2px solid $primary;
+    }
+}

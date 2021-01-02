@@ -1,0 +1,14 @@
+@mixin bg-center($size, $url) {
+    background-size: $size;
+    background-position: center;
+    background-image: url($url);
+    background-repeat: no-repeat;
+}
+@mixin xy-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin hover-shadow {
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2); 
+}
