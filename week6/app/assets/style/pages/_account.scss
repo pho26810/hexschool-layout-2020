@@ -1,0 +1,24 @@
+.account{
+    color:#818A91;
+    .form-control-plaintext{
+        color:#818A91;
+    }
+    ::placeholder { 
+        color:#818A91;
+    }
+    &__nav{
+        a{
+            color:#8d8d8d;
+        }
+        a:hover{
+            color:#916000;
+            text-decoration: none;
+        }
+        a.active{
+            border-bottom: 2px solid #916000;
+        }
+    }
+    small{
+        font-size: 14px;
+    }
+}
